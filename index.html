@@ -5,45 +5,40 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-* {
-  box-sizing:border-box;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
-  body{
-    margin:0;
-  }
-/* Style the header */
-.header {
-  background-color:lightskyblue; 
-  padding: 20px;
-  text-align: center;
+
+li {
+  float: left;
 }
-/* Style the topnav links */
-.topnav a {
-  float:left;
+
+li a {
   display: block;
-  color: black
+  color: white;
   text-align: center;
-  padding: 13px 16px;
+  padding: 14px 16px;
   text-decoration: none;
 }
-/* Change color on hover */
-.topnav a:hover {
-  background-color:white;
-  color: black
+
+li a:hover {
+  background-color: #111;
 }
-</style>
-</head>
-<body>
-<div class="header">
-    <h1 style="color:blueviolet;">Hello! I'm Cindy</h1>
-    <p style="color:blueviolet;">Welcome to my life ^ - ^</p>
-</div>
-<div class="w3-bar w3-black">
-  <a href="#" class="w3-bar-item w3 button">Home</a>
-  <a href="#">About</a>
-  <a href="#">Research</a>
-  <a href="#">Organization</a>
-</div>
 <h2>Have a look!</h2>
+</style>
+</body>
+<body>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#Research">Research</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
 </body>
 </html>
