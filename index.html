@@ -8,19 +8,23 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <style>
-
-.bg-image {
-  /* Full height */
-  height: 50%; 
-  
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size: 80px;
+  border: 10px solid #f1f1f1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
 }
-
-/* Images used */
-.img1 { background-image: url("bridge.jpg"); }
 
   /* Remove the navbar's default margin-bottom and rounded borders */ 
 .navbar {
@@ -66,6 +70,7 @@
 </body>
   <div class="emory.jpg">
     <img src="emory.jpg" alt="emory" width="500" height="300">
+    <div class="bg-text">Hello! I'm Cindy <br> Welcome to my life ^ - ^</div>
   <div class="container text-center">
     <h1>Hello! I'm Cindy</h1>      
     <p>Welcome to my life ^ - ^</p>
