@@ -4,10 +4,26 @@
 <title>Caffeinated Cation</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+
 <style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/coffeehouse.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+
   /* Remove the navbar's default margin-bottom and rounded borders */ 
   .navbar {
     margin-bottom: 0;
@@ -25,6 +41,7 @@
 </head>
 <body>
 
+<!-- Nav bar links on top --> 
 <nav class="navbar navbar-inverse">
 <div class="container-fluid">
   <div class="navbar-header">
@@ -40,31 +57,88 @@
       <li class="active"><a href="index.html">Home</a></li>
       <li> <a href="Research.html">Research </a></li>
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="Music.html">Music <span class="caret"></span></a></li>
-     <li class="dropdown"><a class="dropdown-toggle" type="button" data-toggle="dropdown" href="Fun Projects.html">Fun Projects <span class="caret"></span></a>
+      <li class="dropdown"><a class="dropdown-toggle" type="button" data-toggle="dropdown" href="Fun Projects.html">Fun Projects <span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="Fun Projects.html#Academia Insta">Academia Insta</a></li>
           <li><a href="Fun Projects.html#Podcast">Podcast</a></li>
           <li><a href="Fun Projects.html#Figure Skating">Figure Skating</a></li>
         </ul>
-    </ul>
+      </li>
   </div>
-</nav>
-<div class="jumbotron">
-  <div class="container text-center">
-    <h1>Hello! I'm Cindy</h1>      
-    <p>Welcome to my life ^ - ^</p>
-    <h2> Have a look! </h2>
+  <!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Open from 6am to 5pm</span>
   </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">the<br>Cafe</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">15 Adr street, 5015</span>
+  </div>
+</header>
 
-</body>
-<div>
-  <h3>Crystallography Research</h3>
-  <h4>Computational Research</h4>
-  <p>Utilizes Linux for computational calculations to obtain an optimized VioC State III, L-Arg and Peroxysuccinate intermediate and to accurately predict UV-Vis spectra of the metalloenzyme VioC and monitor transitions.</p>
-  <h4>Experimental Research</h4>
-  <p>In many human pathogens, the prokaryotic-specific, zinc-dependent enzyme Guanosine 5'-triphosphate (GTP) cyclohydrolase-IB (GCYH-IB; encoded by the fole2 gene), a class of GCYH-I, is the only enzyme present to catalyze the first step of the folate pathway. This fact makes GCYH-IB a perfect target for antibiotics; we are studying dehydrocostus lactone (DHL) and β-lapachone. Previous structural and enzymatic studies on GCYH-IB from N. gonorrhoeae showed it is structurally distinct from GCYH-I. GCYH-IB is a bimodular, homotetrameric enzyme activated by various divalent cations, and its active site differs in the helical insertions and deletions near the interface. Our study aims to gain structures of the inhibitors bound to the enzyme’s active site to complement the experimental data collected by our collaborators with GCYH-IB from B. thailandensis. Previous inhibitors have been proposed and co-crystallized with GCYH-IB from N. gonorrhoeae, but our solution data for DHL and β-lapachone suggest the latter inhibitors are preferable. From our initial crystal screens and optimization trays, FolE2 is particular about its environmental condition for crystallization, yielding non-diffracting crystals in one or two conditions. Therefore, FolE2 was lysine methylated to improve the success rate of crystallization by widening the range of conditions FolE2 crystallized in. After modification, FolE2’s crystallization was more successful than previous attempts and was further optimized for crystal growth. This resulted in the crystal formation evolving from walnut-shaped crystals (less desirable) to rod-shaped and plate-shaped crystals (more desirable). These crystals were prepared and looped for x-ray crystallography at Sector 23 of the Advanced Photon Source at Argonne National Labs. Once the structures of the enzyme with the inhibitors DHL and β-lapachone are solved, the results will be published with the solution experiments, providing a new option to combat pathogens with this enzyme, and the first structure of GCYH-IB from B. thailandensis.</p>
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE CAFE</span></h5>
+    <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i></p>
+      <p>Chef, Coffeeist and Owner: Liam Brown</p>
+    </div>
+    <img src="/w3images/coffeeshop.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
+    <p><strong>Address:</strong> 15 Adr street, 5015, NY</p>
+  </div>
 </div>
-</body>
-<body>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Eat</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Drink</div>
+      </a>
+    </div>
+
+    <!-- left side eat -->
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Bread Basket</h5>
+      <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+    </div>
+
+    <!-- right side drink-->
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Coffee</h5>
+      <p class="w3-text-grey">Regular coffee 2.50</p><br>
+    </div>  
+    <img src="/w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+    <p>Find us at some address at some place.</p>
+    <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
+    </div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
 </body>
 </html>
